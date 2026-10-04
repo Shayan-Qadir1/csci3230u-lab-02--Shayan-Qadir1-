@@ -30,8 +30,45 @@ body {
 /* TODO: a Flexbox row on .site-header; push the nav right with
    margin-left:auto; add flex-wrap so the nav drops below the brand on a
    narrow screen (that's the whole responsive story - no media query). */
+.site-header {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 1rem;
+   background-color: var(--header-bg);
+}
 
+.brand {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   color: white;
+   text-decoration: none;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
 
+.brand img {
+   width: 40px;
+   height: 40px;
+}
+
+.site-header nav {
+   display: flex;
+   gap: 1rem;
+   margin-left: auto;
+}
+
+.site-header nav a {
+   color: white;
+   text-decoration: none;
+   padding: 0.5rem;
+}
+
+.site-header nav a:hover {
+   background-color: var(--color-hover);
+   color: var(--header-bg);
+}
 
 /* ---- the board  (requirement 5) ------------------------------------ */
 /* TODO: border-collapse the #board; size each cell and centre the digit;
