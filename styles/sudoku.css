@@ -145,3 +145,17 @@ body {
 /* ---- high-scores table  (requirement 8) ---------------------------- */
 /* TODO: comfortable padding; left-aligned headings; an underline under
    the header row of .scores. */
+
+.scores {
+   margin: 0 auto;
+   border-collapse: collapse;
+}
+
+.scores th, .scores td {
+   padding: 0.75rem 1.5rem;
+}
+
+.scores th {
+   text-align: left;
+   border-bottom: 2px solid var(--block-line);
+}
